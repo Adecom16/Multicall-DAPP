@@ -1,0 +1,145 @@
+/* App.css */
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.main-heading {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+.input-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input:focus {
+  border-color: #3498db;
+}
+
+.current-account {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.token-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.loading {
+  color: #999;
+  text-align: center;
+}
+
+.token-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.token-item:hover {
+  transform: translateY(-5px);
+}
+
+.token-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.token-info {
+  text-align: center;
+}
+
+.token-name {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.token-symbol {
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.token-details {
+  color: #666;
+}
+
+.token-details {
+  color: #666;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.token-details p:first-child {
+  margin-bottom: 5px;
+  color: #888;
+  font-weight: bold;
+}
+
+.token-details p:last-child {
+  font-size: 1.3em;
+  color: #2ecc71;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5px;
+}
+
+.token-address {
+  font-size: 1em;
+  color: #777;
+  margin-top: 5px;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .token-item {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 576px) {
+  .token-item {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
