@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 class="main-heading">Wallet Explorer</h1>
+      <h1 class="main-heading">Token Balance Tracker</h1>
       <div className="input-container">
         <input
           type="text"
